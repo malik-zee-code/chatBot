@@ -84,6 +84,8 @@ export default function SignUp() {
         return;
       }
 
+      alert("An email has been sent to you Check it out!");
+
       window.location("/login");
     }
   }
