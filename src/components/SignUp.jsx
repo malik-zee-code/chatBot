@@ -72,7 +72,7 @@ export default function SignUp() {
         return;
       }
 
-      let result = await postData("http://localhost:5000/api/v1/user/signup", {
+      let result = await postData("https://hangman-786.el.r.appspot.com/api/v1/user/signup", {
         username: inputs.username,
         email: inputs.email,
         password: inputs.repassword,

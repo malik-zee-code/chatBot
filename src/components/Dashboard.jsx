@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function x() {
-      const result = await fetch("http://localhost:5000/api/v1/user/total-users", {
+      const result = await fetch("https://hangman-786.el.r.appspot.com/api/v1/user/total-users", {
         method: "GET",
         mode: "cors",
       });

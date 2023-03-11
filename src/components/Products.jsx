@@ -19,16 +19,17 @@ export default function Products() {
 
     window.location = "/login";
   }
-  const options = {
-    method: "GET",
-    url: `https://${process.env.REACT_APP_HOST}`,
-    params: { medicineName: "prolyte" },
-    headers: {
-      "X-RapidAPI-Key": process.env.REACT_APP_KEY,
-      "X-RapidAPI-Host": process.env.REACT_APP_HOST,
-    },
-  };
+
   useEffect(() => {
+    const options = {
+      method: "GET",
+      url: `https://${process.env.REACT_APP_HOST}`,
+      params: { medicineName: "prolyte" },
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_KEY,
+        "X-RapidAPI-Host": process.env.REACT_APP_HOST,
+      },
+    };
     axios
       .request(options)
       .then(function (response) {
